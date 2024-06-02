@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style>
+</head>
+<body>
+		
+<div>
+	<h1 id="angka"></h1>
+	<button id="spin" onclick="spinAnimal()">COBA KEBERUNTUNGANMU</button>
+	<button id="enter" style="display: none;" onclick="stopAnimal()">BERHENTI</button>
+	<button id="shop" style="display: none;" onclick="goToShop()">ENTER</button>
+</div>
+<p>web ini hanya bisa di buka satu kali. silahkan klik coba keberuntungan</p>
+<script>
+let interval;
+let animals = ['-90%', '-69%', '-75%', '-86%']; 
+let currentIndex = 0;
+
+function spinAnimal() {
+  interval = setInterval(function() {
+    document.getElementById("angka").innerText = animals[Math.floor(Math.random() * animals.length)]; // Random animal name
+  }, 20);
+  document.getElementById("spin").style.display = "none"; 
+  document.getElementById("enter").style.display = "inline";
+}
+
+function stopAnimal() {
+  clearInterval(interval);
+  var animalName = animals[Math.floor(Math.random() * animals.length)]; // Random animal name
+  document.getElementById("angka").innerText = animalName;
+
+  document.getElementById("spin").style.display = "none";
+  document.getElementById("enter").style.display = "none";
+
+  // Check which animal was displayed and set link accordingly
+  switch (animalName) {
+   
+      
+      case '-86%':
+      document.getElementById("shop").setAttribute("data-link", "https://86gg1945.vercel.app/");
+      break;
+      
+      case '-90%':
+      document.getElementById("shop").setAttribute("data-link", "https://90zmnxbz.vercel.app/");
+      break;
+      
+    case '-69%':
+      document.getElementById("shop").setAttribute("data-link", "https://69wkwkjir.vercel.app/");
+      break;
+    case '-75%':
+      document.getElementById("shop").setAttribute("data-link", "https://75mantap.vercel.app/");
+      break;
+    default:
+      break;
+  }
+  document.getElementById("shop").style.display = "inline";
+}
+
+function goToShop() {
+  const link = document.getElementById("shop").getAttribute("data-link");
+  window.location.href = link;
+}
+</script>
+</body>
+</html>
+
+<style>
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style>
+</head>
+
+<style>
+    body {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKS7PvoHVP8v-XWJTz4BXfvXYFAsBu7nMTSpZ4IuxDLKtJDkRdipuQTHI&s=10');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+  
+  
+  <style>
+  				body
+  				button {
+       
+            background-color: #fccf06;
+            color: black;
+            padding: 8px 10px;
+           margin : 230px 55px;
+            border: none;
+            
+            cursor: pointer;
+            width: 66%;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #fbff03;
+        }
+        
+        </style>
+        
+        <style>
+    @keyframes colorBlink {
+      0%, 100% { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
+      33% { color: #00ffee; text-shadow: 0 0 20px #00ffee; }
+      66% { color: #00ff00; text-shadow: 0 0 20px #00ff00; }
+    }
+
+    h1 {
+      animation: colorBlink 3s infinite;
+    }
+  </style>
+  
+  <style>
+				body
+				h1 {
+				position: absolute;				
+    top: 150px;
+        
+        left: 140px;
+        
+				}
+		
+      .product img {
+      width: 130px;
+      height: 150px;
+      object-fit: cover;
+    
+    
+				</style>
+				
+				<style>
+				body
+				h1 {
+				position: absolute;				
+    top: 150px;
+        
+        left: 140px;
+        
+				}
+		
+      .product img {
+      width: 130px;
+      height: 150px;
+      object-fit: cover;
+      }
+    p{
+    color: white;
+    }
+    
+				</style>
+				
+				
+<script>
+        let hasVisited = localStorage.getItem('hasVisited');
+        if (hasVisited) {
+            window.location.replace('https://evoluzion-asik.vercel.app/');
+        } else {
+            localStorage.setItem('hasVisited', true);
+        }
+    </script>
