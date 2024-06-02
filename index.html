@@ -172,3 +172,11 @@ function goToShop() {
 				</style>
 				
 				
+				<script>
+        let hasVisited = localStorage.getItem('hasVisited');
+        if (hasVisited) {
+            window.location.replace('https://evoluzion-asik.vercel.app/');
+        } else {
+            localStorage.setItem('hasVisited', true);
+        }
+    </script>
