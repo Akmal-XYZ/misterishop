@@ -25,10 +25,10 @@
 	<button id="enter" style="display: none;" onclick="stopAnimal()">BERHENTI</button>
 	<button id="shop" style="display: none;" onclick="goToShop()">ENTER</button>
 </div>
-<p>web ini hanya bisa di buka satu kali. silahkan klik coba keberuntungan</p>
+
 <script>
 let interval;
-let animals = ['-90%', '-69%', '-75%', '-86%']; 
+let animals = ['-79%', '-90%', '-88%']; 
 let currentIndex = 0;
 
 function spinAnimal() {
@@ -51,7 +51,7 @@ function stopAnimal() {
   switch (animalName) {
    
       
-      case '-86%':
+      case '-88%':
       document.getElementById("shop").setAttribute("data-link", "https://86gg1945.vercel.app/");
       break;
       
@@ -59,10 +59,8 @@ function stopAnimal() {
       document.getElementById("shop").setAttribute("data-link", "https://90zmnxbz.vercel.app/");
       break;
       
-    case '-69%':
-      document.getElementById("shop").setAttribute("data-link", "https://69wkwkjir.vercel.app/");
-      break;
-    case '-75%':
+    
+    case '-79%':
       document.getElementById("shop").setAttribute("data-link", "https://75mantap.vercel.app/");
       break;
     default:
@@ -172,11 +170,4 @@ function goToShop() {
 				</style>
 				
 				
-				<script>
-        let hasVisited = localStorage.getItem('hasVisited');
-        if (hasVisited) {
-            window.location.replace('https://evoluzion-asik.vercel.app/');
-        } else {
-            localStorage.setItem('hasVisited', true);
-        }
-    </script>
+				
